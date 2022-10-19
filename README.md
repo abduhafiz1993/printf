@@ -75,16 +75,26 @@ Output: `i have 100 cars.`
 **_printf.c**
 
 * contains the  function ```_printf```, which uses the prototype ```int_printf(const char *format, ...);```. The format string is composed of zero or more directives. **_printf**will return the number of characters printed (excluding the null byte used to end output to strings) and will write output to**stdout**, the standard output stream.
+
 **main.h**
+
 *contains all function prototypes used for ```_printf```.
+
 **print....c**
+
 * contains all function of each specifier used for ```_printf```.
 * all function have its own description inside the file.
+
 **get_print.c**
+
 * selects the right printing function for ```_printf```.
+
 **get_flag.c**
+
 * turns on flags for ```_printf```.
+
 **converter.c**
+
 * converts number and base into string.
 
 ## Directory Descriptions
