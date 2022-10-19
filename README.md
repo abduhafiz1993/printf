@@ -28,7 +28,6 @@ The `_printf()` function mimics original `printf()` and takes a format string an
 * [x] Write function that produces output with conversion specifiers ```c```, ```s```, and ```%```.
 
 * [x] Handle conversion specifiers ```d```, ```i```.
-* [x] Create a man page for your function.
 
 ## Advanced Tasks
 
