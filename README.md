@@ -11,7 +11,7 @@ The `_printf()` function mimics original `printf()` and takes a format string an
 ## Requirement
 
 * All files will be compiled on Ubuntu 20.04 LTS
-* Programs and functions will be compiled with gcc 4.8.4 using flags -Wall -Werror -Wextra and -pedantic
+* Programs and functions will be compiled with gcc using flags -Wall -Werror -Wextra and -pedantic
 * Code must follow the [Betty](https://github.com/holbertonschool/Betty/wiki) style
 * Global variables are not allowed
 * Authorized functions and macros:
