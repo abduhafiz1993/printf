@@ -3,8 +3,7 @@
 
 ![Betty style](https://img.shields.io/badge/betty-style%20guide-purple?style=round-square)
 
-## Learning Objectives
->needed to be [explaied](https://fs.blog/feynman-learning-technique/) after the project.
+## Resources
 * [Sectrets of Printf](https://www.academia.edu/10297206/Secrets_of_printf_)
 
 ## Authorized functions and macros
@@ -130,10 +129,49 @@ alex@ubuntu:~/c/printf$
    + You don’t have to handle field width
    + You don’t have to handle precision
    + You don’t have to handle the length modifiers
+   __Example__:
+   ```c
+   alex@ubuntu:~/c/printf$ cat main.c
+   #include "main.h"
+   /**
+   * main - Entry point
+   *
+   * Return: Always 0
+   */
+   int main(void)
+   {
+     _printf("%b\n", 98);
+     return (0);
+   }
+   alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 main.c
+   alex@ubuntu:~/c/printf$ ./a.out
+   1100010
+   alex@ubuntu:~/c/printf$
+   ```
 + [x] 4\. Nothing in fine print is ever good news<br/>Use a local buffer of 1024 chars in order to call `write` as little as possible.
 + [x] 5\. My weakness is wearing too much leopard print<br/>Handle the following custom conversion specifier:
      + `S` : prints the string.
    + Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: `\x`, followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
+   __Example__:
+   ```c
+   alex@ubuntu:~/c/printf$ cat main.c
+   #include "main.h"
+   
+   /**
+   * main - Entry point
+   *
+   * Return: Always 0
+   */
+   int main(void)
+   {
+   _printf("%S\n", "Best\nSchool");
+   return (0);
+   }
+   alex@ubuntu:~/c/printf$ gcc -Wall -Wextra -Werror -pedantic -std=gnu89 main.c
+   alex@ubuntu:~/c/printf$ ./a.out
+   Best\x0ASchool
+   alex@ubuntu:~/c/printf$
+   ```
 + [x] 6\. How is the world ruled and led to war? Diplomats lie to journalists and believe these lies when they see them in print<br/>Handle the following conversion specifier: `p`.
    + You don’t have to handle the flag characters
    + You don’t have to handle field width
