@@ -1,3 +1,4 @@
+just am try to exercise forking bro
 # 0x11. C - printf
 
 ![Betty style](https://img.shields.io/badge/betty-style%20guide-purple?style=round-square)
